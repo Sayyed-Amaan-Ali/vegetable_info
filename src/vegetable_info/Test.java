@@ -14,7 +14,7 @@ public class Test {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/University","root","amaan9876");
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/University","root","1234");
 			Statement st=connection.createStatement();
 			Restart.start(st);
 			Seller.veg_data(st);
