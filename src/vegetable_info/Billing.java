@@ -13,7 +13,7 @@ public class Billing {
 			ResultSet set=st.executeQuery("select * from veg_seller where vid='"+id+"'");
 			set.next();
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/University","root","amaan9876");
+			Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/University","root","1234");
 			Statement st1=connection.createStatement();
 			int r=st1.executeUpdate("insert into customer values('"+set.getInt(1)+"','"+n+"','"+set.getString(3)+"','"+(set.getInt(4)*n)+"')");
 			display.show_bill(st1);
